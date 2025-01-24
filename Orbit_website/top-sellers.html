@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Top Sellers - Orbit Game Store</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      .game-card {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+
+      .game-card:hover {
+        transform: scale(1.03);
+      }
+
+      .game-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .game-card .card-body {
+        padding: 20px;
+      }
+
+      .game-title {
+        font-weight: bold;
+        font-size: 1.25rem;
+      }
+
+      .release-date {
+        font-size: 0.9rem;
+        color: #888;
+        margin-bottom: 10px;
+      }
+
+      .game-description {
+        font-size: 0.95rem;
+        color: #555;
+        margin-bottom: 10px;
+      }
+
+      .read-more {
+        color: #007bff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .read-more:hover {
+        text-decoration: underline;
+      }
+
+      .price {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .game-card .btn {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+          <a class="navbar-brand" href="index.html">Orbit Game Store</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Checkout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownGames"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Games</a
+                >
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdownGames"
+                >
+                  <li>
+                    <a class="dropdown-item" href="new-releases.html"
+                      >New Releases</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="top-sellers.html"
+                      >Top Sellers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="upcoming.html"
+                      >Upcoming Games</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Top Sellers Section-->
+      <section class="bg-light py-5">
+        <div class="container px-5 my-5">
+          <div class="text-center mb-5">
+            <h1 class="fw-bolder">Top Sellers</h1>
+            <p class="lead fw-normal text-muted mb-0">
+              Discover the best-selling games loved by players worldwide!
+            </p>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+              <div class="game-card">
+                <img src="assets/top1.jpg" alt="Top Seller 1" />
+                <div class="card-body">
+                  <div class="game-title">Game Title A</div>
+                  <div class="release-date">
+                    Release Date: November 10, 2023
+                  </div>
+                  <div class="game-description">
+                    An award-winning RPG with a deep storyline and breathtaking
+                    visuals.
+                  </div>
+                  <a class="read-more" href="#">Read More...</a>
+                  <div class="price">$69.99</div>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="game-card">
+                <img src="assets/top2.jpg" alt="Top Seller 2" />
+                <div class="card-body">
+                  <div class="game-title">Game Title B</div>
+                  <div class="release-date">Release Date: December 5, 2023</div>
+                  <div class="game-description">
+                    Step into a world of endless combat and exciting challenges
+                    in this action-packed game.
+                  </div>
+                  <a class="read-more" href="#">Read More...</a>
+                  <div class="price">$59.99</div>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="game-card">
+                <img src="assets/top3.jpg" alt="Top Seller 3" />
+                <div class="card-body">
+                  <div class="game-title">Game Title C</div>
+                  <div class="release-date">Release Date: October 20, 2023</div>
+                  <div class="game-description">
+                    A thrilling multiplayer shooter that redefines online
+                    gameplay.
+                  </div>
+                  <a class="read-more" href="#">Read More...</a>
+                  <div class="price">$49.99</div>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="game-card">
+                <img src="assets/top4.jpg" alt="Top Seller 4" />
+                <div class="card-body">
+                  <div class="game-title">Game Title D</div>
+                  <div class="release-date">
+                    Release Date: September 15, 2023
+                  </div>
+                  <div class="game-description">
+                    Build your empire and conquer your enemies in this strategy
+                    masterpiece.
+                  </div>
+                  <a class="read-more" href="#">Read More...</a>
+                  <div class="price">$39.99</div>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="game-card">
+                <img src="assets/top5.jpg" alt="Top Seller 5" />
+                <div class="card-body">
+                  <div class="game-title">Game Title E</div>
+                  <div class="release-date">Release Date: August 30, 2023</div>
+                  <div class="game-description">
+                    An immersive open-world experience with limitless
+                    exploration opportunities.
+                  </div>
+                  <a class="read-more" href="#">Read More...</a>
+                  <div class="price">$79.99</div>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="game-card">
+                <img src="assets/top6.jpg" alt="Top Seller 6" />
+                <div class="card-body">
+                  <div class="game-title">Game Title F</div>
+                  <div class="release-date">Release Date: July 20, 2023</div>
+                  <div class="game-description">
+                    A classic puzzle game revamped for modern consoles.
+                  </div>
+                  <a class="read-more" href="#">Read More...</a>
+                  <div class="price">$29.99</div>
+                  <button class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright &copy; Orbit Game Store 2023</div>
+                </div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

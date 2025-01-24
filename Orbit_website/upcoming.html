@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Upcoming Games - Orbit Game Store</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .game-card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px; /* Adjusted height */
+            padding-bottom: 15px;
+        }
+
+        .game-card:hover {
+            transform: scale(1.03);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 150px; /* Reduced height */
+            object-fit: cover;
+        }
+
+        .game-card .card-body {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%; /* Ensure space for content and buttons */
+        }
+
+        .game-title {
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .release-date {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .game-description {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px; /* Spacing from the description */
+        }
+
+        .button-container button {
+            width: 160px; /* Fixed width for buttons */
+            padding: 10px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .btn-blue {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .btn-blue:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .read-more {
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        .blog-posts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .blog-posts .game-card {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html">Orbit Game Store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Checkout</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGames" role="button" data-bs-toggle="dropdown" aria-expanded="false">Games</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownGames">
+                                <li><a class="dropdown-item" href="new-releases.html">New Releases</a></li>
+                                <li><a class="dropdown-item" href="top-sellers.html">Top Sellers</a></li>
+                                <li><a class="dropdown-item" href="upcoming.html">Upcoming Games</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Upcoming Games Section-->
+        <section class="bg-light py-5">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bolder">Upcoming Games</h1>
+                    <p class="lead fw-normal text-muted mb-0">Stay tuned for these upcoming releases!</p>
+                </div>
+
+                <!-- Blog Posts (Thinner Height Cards) -->
+                <div class="blog-posts">
+                    <div class="game-card">
+                        <img src="assets/upcoming1.jpg" alt="Upcoming Game 1">
+                        <div class="card-body">
+                            <div class="game-title">Game Title 1</div>
+                            <div class="release-date">Release Date: January 15, 2025</div>
+                            <div class="game-description">Prepare for an epic open-world RPG experience with breathtaking graphics and rich storytelling.</div>
+                            <a class="read-more" href="#!">Read More...</a>
+                            <div class="price">$69.99</div>
+                            <div class="button-container">
+                                <button class="btn btn-blue">Pre-order Now</button>
+                                <button class="btn btn-blue">Join Discussion</button>
+                                <button class="btn btn-blue">More Information</button>
+                                <button class="btn btn-blue">Donate</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="assets/upcoming2.jpg" alt="Upcoming Game 2">
+                        <div class="card-body">
+                            <div class="game-title">Game Title 2</div>
+                            <div class="release-date">Release Date: February 10, 2025</div>
+                            <div class="game-description">A heart-stopping action-adventure game with a gripping plot and fast-paced combat.</div>
+                            <a class="read-more" href="#!">Read More...</a>
+                            <div class="price">$59.99</div>
+                            <div class="button-container">
+                                <button class="btn btn-blue">Pre-order Now</button>
+                                <button class="btn btn-blue">Join Discussion</button>
+                                <button class="btn btn-blue">More Information</button>
+                                <button class="btn btn-blue">Donate</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="assets/upcoming3.jpg" alt="Upcoming Game 3">
+                        <div class="card-body">
+                            <div class="game-title">Game Title 3</div>
+                            <div class="release-date">Release Date: March 1, 2025</div>
+                            <div class="game-description">An innovative puzzle-platformer that will challenge your mind and keep you hooked for hours.</div>
+                            <a class="read-more" href="#!">Read More...</a>
+                            <div class="price">$49.99</div>
+                            <div class="button-container">
+                                <button class="btn btn-blue">Pre-order Now</button>
+                                <button class="btn btn-blue">Join Discussion</button>
+                                <button class="btn btn-blue">More Information</button>
+                                <button class="btn btn-blue">Donate</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="assets/upcoming4.jpg" alt="Upcoming Game 4">
+                        <div class="card-body">
+                            <div class="game-title">Game Title 4</div>
+                            <div class="release-date">Release Date: April 5, 2025</div>
+                            <div class="game-description">Get ready for an epic fantasy adventure where your decisions impact the story.</div>
+                            <a class="read-more" href="#!">Read More...</a>
+                            <div class="price">$39.99</div>
+                            <div class="button-container">
+                                <button class="btn btn-blue">Pre-order Now</button>
+                                <button class="btn btn-blue">Join Discussion</button>
+                                <button class="btn btn-blue">More Information</button>
+                                <button class="btn btn-blue">Donate</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <img src="assets/upcoming5.jpg" alt="Upcoming Game 5">
+                        <div class="card-body">
+                            <div class="game-title">Game Title 5</div>
+                            <div class="release-date">Release Date: May 20, 2025</div>
+                            <div class="game-description">An exciting multiplayer game that combines strategy and action like never before.</div>
+                            <a class="read-more" href="#!">Read More...</a>
+                            <div class="price">$44.99</div>
+                            <div class="button-container">
+                                <button class="btn btn-blue">Pre-order Now</button>
+                                <button class="btn btn-blue">Join Discussion</button>
+                                <button class="btn btn-blue">More Information</button>
+                                <button class="btn btn-blue">Donate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright &copy; Orbit Game Store 2023</div>
+                </div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
